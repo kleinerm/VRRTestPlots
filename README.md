@@ -9,6 +9,11 @@ The included test script VRRTest was executed within GNU/Octave
 on a amdgpu-wip-5.2 kernel to exercise VRR with different
 test patterns within VRR range and below-the-range.
 
+For most tests, the following patch series was applied to get
+improved results, especially on DCE-8 and DCE-11:
+
+https://patchwork.freedesktop.org/series/59678/
+
 The PDF files contain various plots of the results when testing
 on DCE-8, DCE-11 Polaris-11 and DCN-1 Raven Ridge.
 
