@@ -3,7 +3,7 @@ test VRR / FreeSync support of Linux 5.2 + AMD FreeSync gpu's.
 
 Needs Psychtoolbox-3, e.g., on recent Debian or Ubuntu:
 
-sudo apt-install octave-psychtoolbox-3
+sudo apt install octave-psychtoolbox-3
 
 The included test script VRRTest was executed within GNU/Octave
 on a amdgpu-wip-5.2 kernel to exercise VRR with different
@@ -21,10 +21,17 @@ You can run the tests yourself, either by launching octave
 in interactive mode:
 
 Terminal:  octave
-In Octave: more off
-           help VRRTest     % For help text with cmdline params.
-           VRRTest('sine')  % For sine-wave test, 2000 flips.
-           VRRTest('upstepping', 1000); % step up, 1000 flips.
+
+In Octave:
+
+more off
+
+help VRRTest     % For help text with cmdline params.
+
+VRRTest('sine')  % For sine-wave test, 2000 flips.
+
+VRRTest('upstepping', 1000); % step up, 1000 flips.
+
 
 Batch execution from terminal:
 E.g.
